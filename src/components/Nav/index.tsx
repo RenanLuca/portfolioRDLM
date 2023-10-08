@@ -1,5 +1,5 @@
 import { NavContainer, NavItem, NavLogo, NavMenu, ScrollButton } from "./styles";
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 import {useEffect, useState} from 'react'
 import { ArrowCircleUp } from "@mui/icons-material";
 export function Nav() {

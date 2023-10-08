@@ -1,6 +1,6 @@
 import {TextField, styled } from "@mui/material";
 import * as zod from 'zod'
-export const FormInput = styled(TextField)(({ theme }) => ({
+export const FormInput = styled(TextField)(({ }) => ({
     '& .MuiInput-input': {
         paddingBottom: '0.6rem',
         color: 'white', // Defina o padding desejado aqui

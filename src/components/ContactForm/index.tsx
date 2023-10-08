@@ -1,9 +1,9 @@
-import { Button, Grid, TextField, styled } from "@mui/material";
+import { Button, Grid } from "@mui/material";
 import { ContactContainer, Form, MessageSent } from "./styles";
 import { useForm } from 'react-hook-form'
 import * as zod from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useInView } from 'react-intersection-observer';
 import { useSpring, animated } from 'react-spring';
 import { 
@@ -34,7 +34,7 @@ export function ContactForm() {
     const { errors } = formState
     const [messageSent, setMessageSent] = useState(false)
 
-    function handleSendNewMessage(data: newMessageFormData) {
+    function handleSendNewMessage() {
         event?.preventDefault()
         setMessageSent(true)
         reset()
