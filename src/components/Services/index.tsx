@@ -30,7 +30,7 @@ export function Services() {
                             '&:hover': {
                                 'transform': 'scale(1.1)'
                             },
-                            '@media (max-width: 768px)' : {
+                            '@media (max-width: 1024px)' : {
                                 width: '350px',
                                 flexGrow: 0,
                                 flexBasis: '250px'
@@ -57,7 +57,7 @@ export function Services() {
                             '&:hover': {
                                 'transform': 'scale(1.1)'
                             },
-                            '@media (max-width: 768px)' : {
+                            '@media (max-width: 1024px)' : {
                                 width: '350px',
                                 flexGrow: 0,
                                 flexBasis: '250px'
@@ -83,7 +83,7 @@ export function Services() {
                             '&:hover': {
                                 'transform': 'scale(1.1)'
                             },
-                            '@media (max-width: 768px)' : {
+                            '@media (max-width: 1024px)' : {
                                 width: '350px',
                                 flexGrow: 0,
                                 flexBasis: '250px'

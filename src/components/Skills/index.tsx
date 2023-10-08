@@ -25,7 +25,7 @@ export function Skills() {
                         backgroundColor: 'grey.700',
                         border: '1px solid',
                         borderColor: 'grey.500',
-                        '@media (max-width: 768px)' : {
+                        '@media (max-width: 1024px)' : {
                             flexDirection: 'column',
                             gap: '3rem',
                             width: 'auto',

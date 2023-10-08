@@ -13,7 +13,7 @@ export const ServicesContainer = styled.div`
         font-size: 3rem;
         font-weight: bold;
         text-align: center;
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
             font-size: 2rem;
         }
     }
@@ -22,7 +22,7 @@ export const ServicesList = styled.div`
     display: flex;
     justify-content: space-between;
     gap: 3.75rem;
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
         flex-direction: column;
         align-items: center;
     }

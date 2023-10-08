@@ -5,7 +5,7 @@ export const NavContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     margin-top: 1.75rem;
-    @media (max-width:768px) {
+    @media (max-width:1024px) {
         justify-content: center;
     }
 `
@@ -23,7 +23,7 @@ export const NavMenu = styled.div`
     align-items: center;
     justify-content: space-between;
     gap: 2.5rem;
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
         display: none;
   }
 `

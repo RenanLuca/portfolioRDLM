@@ -23,7 +23,7 @@ export const GlobalStyle = createGlobalStyle`
         -webkit-font-smoothing: antialiased;  
         max-width: 90rem;
         margin: auto;
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
             padding: 0 3rem;
             overflow-wrap: break-word;
         }

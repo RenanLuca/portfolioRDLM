@@ -6,7 +6,7 @@ export const BannerContainer = styled.div`
     align-items: center;
     gap: 7rem;
     margin-top: 8rem;
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
         margin-top: 5rem;
         flex-direction: column;
         gap: 3rem;
@@ -22,7 +22,7 @@ export const BannerContent = styled.div`
         color: var(--white);
         font-weight: bold;
         font-size: 3rem;
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
             text-align: center;
             font-size: 2rem;
         }
@@ -33,7 +33,7 @@ export const BannerContent = styled.div`
         font-size: 1.125rem;
         margin-top: 0.625rem;
         font-weight: 500;
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
             text-align: center;
         }
     }
@@ -58,7 +58,7 @@ export const BannerImage = styled.div`
         outline: 1px solid rgba(79,79,79, 0.4);
         color: rgb(79, 79, 79);
     }
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
        width: 300px;
        flex: 0;
     }
@@ -71,7 +71,7 @@ export const ContentActions = styled.div`
     justify-content: flex-start;
     align-items: center;
     gap: 0.625rem ;
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
         width: 100%;
         justify-content: center;
   }

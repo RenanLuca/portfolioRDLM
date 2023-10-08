@@ -16,7 +16,7 @@ export const AboutDescription = styled.div`
     width: 750px;
     margin-top: 3rem;
     color: var(--white);
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
         width: auto;
     }
     & p {
@@ -25,7 +25,7 @@ export const AboutDescription = styled.div`
         padding: 0 1rem 1rem 1rem;
         line-height: 1.3;
           
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
             font-size: 0.9rem;   
         }
     }
@@ -34,7 +34,7 @@ export const AboutDescription = styled.div`
         font-weight: bold;
         text-align: center;
         
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
             font-size: 2rem;   
         }
     }
@@ -44,7 +44,7 @@ export const AboutSocials = styled.div`
     justify-content: center;
     align-items: flex-start;
     gap:6.75rem;
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
         flex-direction:column;
         align-items: center;
         gap: 4rem;

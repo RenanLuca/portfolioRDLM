@@ -5,11 +5,11 @@ export function About() {
     const [ref, inView] = useInView({
         triggerOnce: true,
         threshold: 0.3, 
-      });
+    });
     
-      const slideIn = useSpring({
+    const slideIn = useSpring({
         transform: inView ? 'translateX(0%)' : 'translateX(-100%) ',
-      });
+    });
   
     return (
         <div ref={ref} id="about">
