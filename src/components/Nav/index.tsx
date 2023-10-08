@@ -32,7 +32,7 @@ export function Nav() {
     return (
         <NavContainer>
             <NavLogo>
-               <img src="public\assets\logo.png" alt="" />
+               <img src="\assets\logo.png" alt="" />
             </NavLogo>
             <NavMenu>
                 <Link
