@@ -6,7 +6,7 @@ import { Link } from "react-scroll";
 export function Banner() {
     const [ref, inView] = useInView({
         triggerOnce: true,
-        threshold: 0.5, // Ajuste esse valor conforme necessário
+        threshold: 0.5, 
       });
     
       const slideIn = useSpring({

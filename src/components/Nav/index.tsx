@@ -9,7 +9,7 @@ export function Nav() {
     const scrollToTop = () => {
       window.scrollTo({
         top: 0,
-        behavior: 'smooth', // Rolar suavemente
+        behavior: 'smooth', 
       });
     };
   

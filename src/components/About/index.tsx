@@ -4,7 +4,7 @@ import { useSpring, animated } from 'react-spring';
 export function About() {
     const [ref, inView] = useInView({
         triggerOnce: true,
-        threshold: 0.3, // Ajuste esse valor conforme necessário
+        threshold: 0.3, 
       });
     
       const slideIn = useSpring({

@@ -3,7 +3,7 @@ import * as zod from 'zod'
 export const FormInput = styled(TextField)(({ }) => ({
     '& .MuiInput-input': {
         paddingBottom: '0.6rem',
-        color: 'white', // Defina o padding desejado aqui
+        color: 'white',
       },
     '& label': {
       color: '#4F4F4F',
