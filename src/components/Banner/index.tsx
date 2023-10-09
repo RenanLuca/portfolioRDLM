@@ -23,7 +23,7 @@ export function Banner() {
                         </ContentPresentation>
                         <ContentActions>
                         <a 
-                            href="public\assets\resume\CV_RenanDeLucaMachado.pdf" 
+                            href="assets\resume\CV_RenanDeLucaMachado.pdf" 
                             target="_blank"
                             style={{ textDecoration: 'none' }}
                         >
