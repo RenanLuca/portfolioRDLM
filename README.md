@@ -1,5 +1,4 @@
 <h1 align="center">
-<img alt="" src="public\assets\logo.png" width="20%">
 Portfólio
 </h1>
 <p align="center">
@@ -63,7 +62,7 @@ git clone https://github.com/RenanLuca/portfolioRDLM.git
 ### 📥 Instale as dependências
 ```bash
 # Acesse o diretório do projeto
-cd cd portfolioRDLM
+cd portfolioRDLM
 
 # Instale as dependências
 yarn 
