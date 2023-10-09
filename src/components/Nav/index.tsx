@@ -32,7 +32,7 @@ export function Nav() {
     return (
         <NavContainer>
             <NavLogo>
-               <img src="\assets\logo.png" alt="" />
+               <img src="\assets\logo.png" alt="Este é o logo escrito RDLM em verde, que significa Renan de Luca Machado" />
             </NavLogo>
             <NavMenu>
                 <Link

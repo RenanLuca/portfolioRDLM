@@ -38,7 +38,10 @@ export function Services() {
                             
                         }}>
                             <HeaderServices>
-                                <img src="/assets/softwareDev.svg" alt="" />
+                                <img 
+                                    src="/assets/softwareDev.svg" 
+                                    alt="Ícone relacionado ao desenvolvimento de software, uma hexágono com riscos dentro" 
+                                />
                             </HeaderServices>
                             <MainServices>
                                 <span>Software Development</span>
@@ -64,7 +67,10 @@ export function Services() {
                             }
                         }}>
                             <HeaderServices>
-                                <img src="/assets/webDev.svg" alt="" />
+                                <img 
+                                    src="/assets/webDev.svg" 
+                                    alt="Ícone relacionado ao desenvolvimento web, quadrado verde escrito dev dentro" 
+                                />
                             </HeaderServices>
                             <MainServices>
                                 <span>Web Development</span>
@@ -91,7 +97,10 @@ export function Services() {
 
                         }}>
                             <HeaderServices>
-                                <img src="/assets/webDesign.svg" alt="" />
+                                <img 
+                                    src="/assets/webDesign.svg" 
+                                    alt="ícone relacionado ao Web Design, um cubo verde" 
+                                />
                             </HeaderServices>
                             <MainServices>
                                 <span>Web Design</span>
