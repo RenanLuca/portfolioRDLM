@@ -4,8 +4,7 @@ import { useForm } from 'react-hook-form'
 import * as zod from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useState } from "react";
-import { useInView } from 'react-intersection-observer';
-import { useSpring, animated } from 'react-spring';
+import { Animated, Ref} from "../../styles/Animations/animations";
 import { 
     FormInput, 
     formContactInitialValues, 
@@ -13,17 +12,12 @@ import {
      
 } 
 from "../../utils/ContactForm";
+import { useAnimatedEntry } from "../../hooks/useAnimatedEntry";
 type newMessageFormData = zod.infer<typeof newMessageFormValidationSchema>
 
 export function ContactForm() {
-    const [ref, inView] = useInView({
-        triggerOnce: true,
-        threshold: 0.3, 
-    });
-    
-    const slideIn = useSpring({
-        transform: inView ? 'translateX(0%)' : 'translateX(-100%) ',
-    });
+    const { ref, slideIn } = useAnimatedEntry();
+
 
     const newMessageForm = useForm<newMessageFormData>({
         resolver: zodResolver(newMessageFormValidationSchema),
@@ -39,10 +33,9 @@ export function ContactForm() {
         setMessageSent(true)
         reset()
     }
-    console.log('oi')
     return (
-        <div ref={ref}>
-            <animated.div style={slideIn}>
+        <Ref ref={ref}>
+            <Animated style={slideIn}>
                 <ContactContainer id="contactForm">
                     <h2>Entre em contato</h2>
                     <Form onSubmit={handleSubmit(handleSendNewMessage)}>
@@ -142,7 +135,7 @@ export function ContactForm() {
 
                     <span id="Copyright">© Renan De Luca 2023</span>
                 </ContactContainer>
-            </animated.div>
-        </div>
+            </Animated>
+        </Ref>
     )
 }

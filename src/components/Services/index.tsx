@@ -1,19 +1,13 @@
 import { Paper } from "@mui/material";
 import { HeaderServices, MainServices, ServicesContainer, ServicesList } from "./styles";
-import { useInView } from 'react-intersection-observer';
-import { useSpring, animated } from 'react-spring';
+import { Animated, Ref} from "../../styles/Animations/animations";
+import { useAnimatedEntry } from "../../hooks/useAnimatedEntry";
+
 export function Services() {
-    const [ref, inView] = useInView({
-        triggerOnce: true,
-        threshold: 0.5, 
-      });
-    
-      const slideIn = useSpring({
-        transform: inView ? 'translatex(0%)' : 'translateX(-150%)',
-      });
+    const { ref, slideIn } = useAnimatedEntry();
     return (
-        <div ref={ref}>
-            <animated.div style={slideIn}>
+        <Ref ref={ref}>
+            <Animated style={slideIn}>
                 <ServicesContainer id="services">
                     <h2>Serviços</h2>
                     <ServicesList>
@@ -108,7 +102,7 @@ export function Services() {
                         </Paper>
                     </ServicesList>
                 </ServicesContainer>
-            </animated.div>
-        </div>
+            </Animated>
+        </Ref>
     )
 }

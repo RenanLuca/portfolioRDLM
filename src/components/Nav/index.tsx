@@ -5,7 +5,6 @@ import { ArrowCircleUp } from "@mui/icons-material";
 export function Nav() {
     const [showScrollButton, setShowScrollButton] = useState(false);
 
-    // Função para rolar até o topo
     const scrollToTop = () => {
       window.scrollTo({
         top: 0,
@@ -13,7 +12,6 @@ export function Nav() {
       });
     };
   
-    // Listener para mostrar/ocultar o botão com base na posição da rolagem
     const handleScroll = () => {
       if (window.scrollY > 100) {
         setShowScrollButton(true);
@@ -22,7 +20,6 @@ export function Nav() {
       }
     };
   
-    // Adicione um event listener para rolagem quando o componente montar
     useEffect(() => {
       window.addEventListener('scroll', handleScroll);
       return () => {

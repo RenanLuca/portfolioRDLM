@@ -1,19 +1,12 @@
 import { Paper } from "@mui/material";
 import { Skill, SkillsContainer } from "./styles";
-import { useInView } from 'react-intersection-observer';
-import { useSpring, animated } from 'react-spring';
+import { Animated, Ref } from "../../styles/Animations/animations";
+import { useAnimatedEntry } from "../../hooks/useAnimatedEntry";
 export function Skills() {
-    const [ref, inView] = useInView({
-        triggerOnce: true,
-        threshold: 0.4, 
-      });
-    
-      const slideIn = useSpring({
-        transform: inView ? 'translateX(0%)' : 'translateX(-100%) ',
-      });
+    const { ref, slideIn } = useAnimatedEntry();
     return (
-        <div ref={ref} id="skills">
-            <animated.div style={slideIn}>
+        <Ref ref={ref} id="skills">
+            <Animated style={slideIn}>
                 <SkillsContainer>
                     <h2>Minhas Habilidades</h2>
                     <Paper sx={{
@@ -51,7 +44,7 @@ export function Skills() {
                         </Skill>
                     </Paper>
                 </SkillsContainer>
-            </animated.div>
-        </div>
+            </Animated>
+        </Ref>
     )
 }

@@ -1,19 +1,11 @@
 import { AboutBulletPoints, AboutContainer, AboutDescription, AboutSocials, BulletPointsContent } from "./styles";
-import { useInView } from 'react-intersection-observer';
-import { useSpring, animated } from 'react-spring';
+import { Animated, Ref} from "../../styles/Animations/animations";
+import { useAnimatedEntry } from "../../hooks/useAnimatedEntry";
 export function About() {
-    const [ref, inView] = useInView({
-        triggerOnce: true,
-        threshold: 0.3, 
-    });
-    
-    const slideIn = useSpring({
-        transform: inView ? 'translateX(0%)' : 'translateX(-100%) ',
-    });
-  
+    const { ref, slideIn } = useAnimatedEntry();
     return (
-        <div ref={ref} id="about">
-            <animated.div style={slideIn}>
+        <Ref ref={ref} id="about">
+            <Animated style={slideIn}>
                 <AboutContainer >
                     <AboutDescription>
                         <h2>Sobre Mim</h2>
@@ -42,7 +34,7 @@ export function About() {
                                 <h3>LinkedIn</h3>
                                 <a 
                                     href="https://www.linkedin.com/in/renandeluca/"
-                                     target="_blank"
+                                    target="_blank"
                                 >
                                     <span>Confira meu perfil!</span>
                                 </a>
@@ -74,7 +66,7 @@ export function About() {
                         </AboutBulletPoints>
                     </AboutSocials>
                 </AboutContainer>
-            </animated.div>
-        </div>
+            </Animated>
+        </Ref>
     )
 }
