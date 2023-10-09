@@ -76,7 +76,9 @@ export function Banner() {
                             alt="Foto de Renan de Luca Machado,
                             um Homem, Branco, Cabelo Castanho Escuro,
                             Olhos Castanho Claro, Sentado em um Restaurante"
-                            style={{ outline: 'none' }}
+                            className={
+                                /iPhone|iPad|iPod/.test(navigator.userAgent) ? 'safari-no-outline' : ''
+                              }
                         />
                     </BannerImage>
                 </BannerContainer>

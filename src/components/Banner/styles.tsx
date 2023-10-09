@@ -57,6 +57,11 @@ export const BannerImage = styled.div`
         border: 20px solid var(--gray-900) ;
         outline: 1px solid rgba(79,79,79, 0.4);
         color: rgb(79, 79, 79);
+       
+    }
+    & .safari-no-outline {
+        outline: none;
+        -webkit-tap-highlight-color: transparent;
     }
     @media (max-width: 1024px) {
        width: 300px;
