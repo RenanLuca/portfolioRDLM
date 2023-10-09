@@ -11,6 +11,9 @@ export const ContactContainer = styled.div`
         font-size: 3rem;
         font-weight: bold;
         text-align: center;
+        @media (max-width:1024px) {
+            font-size: 2rem;
+        }
     }
     & form { 
         margin-bottom:5rem;
