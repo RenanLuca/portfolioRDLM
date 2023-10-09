@@ -45,6 +45,7 @@ Esta aplicação funciona como um portfólio que oferece informações sobre min
 <li>Formulário com validação e personalização de cada erro</li>
 <li>Aplicação responsiva compatível com qualquer dispositivo e navegador</li>
 <li>Uso de componentes do Material UI, assim como criação de um tema</li>
+<li>Hook Personalizado de Animação</li>
 </ul>
 
 ## 🚀 Desempenho 
