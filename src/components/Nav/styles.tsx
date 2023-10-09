@@ -50,6 +50,7 @@ export const ScrollButton = styled.button`
   justify-content: center;
   opacity: 0.7;
   transition: opacity 0.3s ease;
+  z-index: 2;
   &:hover {
     opacity: 1;
   }
