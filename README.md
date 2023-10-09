@@ -1,5 +1,4 @@
 <h1 align="center">
-<img alt="" src="public\assets\logo.png" width="20%">
 Portfólio
 </h1>
 <p align="center">
