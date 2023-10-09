@@ -47,6 +47,9 @@ Esta aplicação funciona como um portfólio que oferece informações sobre min
 <li>Uso de componentes do Material UI, assim como criação de um tema</li>
 </ul>
 
+## 🚀 Desempenho 
+<img src="public/assets/acessibilidade.png"></img>
+
 ##  🖼 Confira a Demo
 
 <p> <a href="https://portfolio-rdlm.vercel.app" target="_blank"> Confira o site </a> </p>
