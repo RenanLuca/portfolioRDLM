@@ -62,7 +62,7 @@ git clone https://github.com/RenanLuca/portfolioRDLM.git
 ### 📥 Instale as dependências
 ```bash
 # Acesse o diretório do projeto
-cd cd portfolioRDLM
+cd portfolioRDLM
 
 # Instale as dependências
 yarn 
