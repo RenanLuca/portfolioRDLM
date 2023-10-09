@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+
 import { useInView } from "react-intersection-observer";
 import { useSpring } from "react-spring";
 
@@ -13,9 +13,6 @@ export function useAnimatedEntry() {
     transform: inView ? "translatex(0%)" : "translateX(-150%)",
   });
 
-  useEffect(() => {
-
-  }, [inView]);
 
   return { ref, slideIn };
 }
