@@ -22,7 +22,11 @@ export function Banner() {
                             <span>Frontend Developer</span>
                         </ContentPresentation>
                         <ContentActions>
-                        <a href="public\assets\resume\CV_RenanDeLucaMachado.pdf" target="_blank">
+                        <a 
+                            href="public\assets\resume\CV_RenanDeLucaMachado.pdf" 
+                            target="_blank"
+                            style={{ textDecoration: 'none' }}
+                        >
                             <Button
                                 variant="outlined"  
                                 sx={{
@@ -72,6 +76,7 @@ export function Banner() {
                             alt="Foto de Renan de Luca Machado,
                             um Homem, Branco, Cabelo Castanho Escuro,
                             Olhos Castanho Claro, Sentado em um Restaurante"
+                            style={{ outline: 'none' }}
                         />
                     </BannerImage>
                 </BannerContainer>

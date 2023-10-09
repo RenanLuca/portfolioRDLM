@@ -74,6 +74,7 @@ export function ContactForm() {
                                     {...register('email')}
                                     error={!!errors.email}
                                     variant="standard" 
+                                    inputMode="email"
                                     label="Email"
                                     id="Email"
                                     sx={{ width: '100%' }}
